@@ -1,0 +1,24 @@
+{
+   "type": "mysql",
+   "host": "localhost",
+   "port": 3306,
+   "username": "root",
+   "password": "abcd1234",
+   "database": "globiex",
+   "synchronize": false,
+   "logging": false,
+   "entities": [
+      "build/entity/**/*.js"
+   ],
+   "migrations": [
+      "build/migration/**/*.js"
+   ],
+   "subscribers": [
+      "build/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "build/entity",
+      "migrationsDir": "build/migration",
+      "subscribersDir": "build/subscriber"
+   }
+}
